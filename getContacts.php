@@ -1,0 +1,113 @@
+<?php
+function getcontacts($request,$data)
+{
+	global $db;
+	$conditions=Array();
+	$conditions[]= " `ignore` = 0 ";
+	/*
+	if(isset($data['country']))
+	{
+		$country=$data['country'];
+		$conditions[]= " country LIKE \"$country\"";
+	}
+	*/
+	if(isset($data['branch']))
+	{
+		$branch=$data['branch'];
+		$conditions[]= " branch LIKE \"$branch%\"";
+	}
+	if(isset($data['zip']))
+	{
+		$zip=$data['zip'];
+		$conditions[]= " zip LIKE \"$zip%\"";
+	}
+	if(isset($data['status']))
+	{
+		$status=$data['status'];
+		$conditions[]=  " status = $status ";
+	}
+	$whereClause= "";
+	foreach($conditions as $cond)
+	{
+		if(strlen($whereClause)>0)
+		{
+			$whereClause.=" AND ";
+		}
+		$whereClause.=$cond;
+		
+	}
+	if(strlen($whereClause)>0)
+	{
+
+		$whereClause= "WHERE ".$whereClause;
+	}
+	else
+	{
+		$whereClause="";
+	}
+	$sql = "SELECT * FROM `contact` $whereClause  ";
+	$sqlresult = mysql_query($sql, $db);
+	if (!$sqlresult) {
+		$error = mysql_error($db);
+		sendRequestError($request, "get contacts sql:  $sql error: $error");
+
+	}
+	$json['contact']=array();
+	while ($contact = mysql_fetch_assoc($sqlresult)) {
+		foreach ($contact as $key => $value) {
+			$contact[$key] = urlencode(($value));
+		}
+		$json['contact'][] = $contact;
+	}
+	sendRequestResult($request, json_encode($json));
+}
+function getContactEmployee($request,$data)
+{
+	global $db;
+	$conditions=Array();
+	if(isset($data['contactID']))
+	{
+		$contactID=$data['contactID'];
+		$conditions[]= "contactID = $contactID";
+	}
+	else
+	{
+		sendRequestError($request, "contactID not set");
+	}
+	$whereClause= "";
+	foreach($conditions as $cond)
+	{
+		if(strlen($whereClause)>0)
+		{
+			$whereClause.=" AND ";
+		}
+		$whereClause.=$cond;
+		
+	}
+	if(strlen($whereClause)>0)
+	{
+
+		$whereClause= "WHERE ".$whereClause;
+	}
+	else
+	{
+		$whereClause="";
+	}
+	$sql = "SELECT * FROM `contactemployee` $whereClause  ";
+	$sqlresult = mysql_query($sql, $db);
+	if (!$sqlresult) {
+		$error = mysql_error($db);
+		sendRequestError($request, "get contacts sql:  $sql error: $error");
+
+	}
+	$json['contactemployee']=Array();
+	while ($contact = mysql_fetch_assoc($sqlresult)) {
+		foreach ($contact as $key => $value) {
+			$contact[$key] = urlencode(($value));
+		}
+		$json['contactemployee'][] = $contact;
+	}
+	sendRequestResult($request, json_encode($json));
+}
+
+?>

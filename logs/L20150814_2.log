@@ -1,0 +1,54 @@
+Start createCrediting cerdirorID: 4
+Start createCrediting mediatortor: 'ERGO Hauptagentur Nils Lohmann'
+Start Check ids:  14F177D61C1
+Caseprovisoon 20
+End Case
+
+
+Start Check ids: 14F177D61C1 14F177D61C1
+Caseprovisoon 20
+End Case
+
+
+Start createCrediting cerdirorID: 54
+Start createCrediting mediatortor: 'Moritz v. Eckardstein Versicherungsmakler UG (haftungsbeschr‰nkt)'
+Start Check ids:  14F1BCEAA9E
+Caseprovisoon 20
+End Case
+
+
+Start Check ids: 14F1BCEAA9E 14F1BCEAA9E
+Caseprovisoon 20
+End Case
+
+
+Start Check ids: 14F1BCEAA9E 14F1BCEAA9E
+Caseprovisoon 50
+End Case
+
+
+Start Check ids: 14F1BCEAA9E 14F1BCEAA9E
+Caseprovisoon 20
+End Case
+
+
+Start createCrediting cerdirorID: 62
+No valid partner/mediator for type 1 > SELECT name as brand,owner as name,street,zip, town  FROM   `mediator`  WHERE  id=62 AND provision=1 AND `ignore` = 0  
+Start createCrediting cerdirorID: 7
+Start createCrediting mediatortor: 'Mario Wendel'
+Start Check ids:  14F17FE52A6
+Caseprovisoon 20
+End Case
+
+
+Start Check ids: 14F17FE52A6 14F17FE52A6
+Caseprovisoon 20
+End Case
+
+
+Start Check ids: 14F17FE52A6 14F17FE52A6
+Caseprovisoon 20
+End Case
+
+
+70 Rechnungen und 3 Gutschriften erstellt f√ºr 20153

@@ -1,0 +1,5 @@
+SQL SELECT case.id as caseID, case.partnerID as partnerID,case.mediatorType as mediatorType, case.mediatorID as mediatorID, 
+			caseBill.totalNet as billNet, caseBill.id as billID, caseBill.type as billType			FROM   `case` LEFT JOIN `caseBill` ON  caseBill.caseID LIKE case.id AND caseBill.totalNet>0 AND caseBill.ignore=0 AND caseBill.status>=9 
+			WHERE case.mediatorID>0  AND case.status = 11 AND case.ignore = 0   AND   (case.changedate LIKE "2015-2%" OR case.changedate LIKE "2015-1%" OR case.changedate LIKE "201500%") ORDER BY caseID
+Amount of bill records0
+[]

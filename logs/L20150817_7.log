@@ -1,0 +1,248 @@
+Total feecaserecords 192
+SELECT case.id as caseID, case.mediatorType as mediatorType, case.mediatorID as mediatorID, 
+			caseBill.totalNet as billNet, caseBill.id as billID, caseBill.type as billType			FROM   `case` INNER JOIN `caseBill` ON  caseBill.caseID LIKE case.id  AND caseBill.totalNet>0 AND caseBill.ignore=0 AND caseBill.status>=9 
+				WHERE case.mediatorID>0  AND case.status = 11 AND case.ignore = 0   AND   (case.changedate LIKE "201507%" OR case.changedate LIKE "201508%" OR case.changedate LIKE "201509%") ORDER BY caseID
+Total provisionrecords 4
+Total caserecords 192
+Case  14C987F0EA2  {"caseID":"14C987F0EA2","partnerID":"1","addTurnover":"0","extraCost":""}
+Case 14C987F0EA2 14E1A706D49  {"caseID":"14E1A706D49","partnerID":"1","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14B6E9F8A79  {"caseID":"14B6E9F8A79","partnerID":"104","addTurnover":"0","extraCost":""}
+Case 14B6E9F8A79 14C4C391F22  {"caseID":"14C4C391F22","partnerID":"104","addTurnover":"0","extraCost":""}
+Case 14C4C391F22 14D950DA692  {"caseID":"14D950DA692","partnerID":"104","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14C4B7631D6  {"caseID":"14C4B7631D6","partnerID":"106","addTurnover":"0","extraCost":""}
+Case 14C4B7631D6 14CB2293D8A  {"caseID":"14CB2293D8A","partnerID":"106","addTurnover":"0","extraCost":""}
+Case 14CB2293D8A 14CC625B4EF  {"caseID":"14CC625B4EF","partnerID":"106","addTurnover":"0","extraCost":""}
+Case 14CC625B4EF 14CE71C966B  {"caseID":"14CE71C966B","partnerID":"106","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14B4A53E1F4  {"caseID":"14B4A53E1F4","partnerID":"107","addTurnover":"0","extraCost":""}
+Case 14B4A53E1F4 14D77151039  {"caseID":"14D77151039","partnerID":"107","addTurnover":"0","extraCost":""}
+Case 14D77151039 14E7282D0FC  {"caseID":"14E7282D0FC","partnerID":"107","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14B4FFCA498  {"caseID":"14B4FFCA498","partnerID":"108","addTurnover":"0","extraCost":""}
+Case 14B4FFCA498 14D9A8CB4A1  {"caseID":"14D9A8CB4A1","partnerID":"108","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14B172B2136  {"caseID":"14B172B2136","partnerID":"12","addTurnover":"0","extraCost":""}
+Case 14B172B2136 14B2AFDFEB8  {"caseID":"14B2AFDFEB8","partnerID":"12","addTurnover":"0","extraCost":""}
+Case 14B2AFDFEB8 14BDAE73A11  {"caseID":"14BDAE73A11","partnerID":"12","addTurnover":"0","extraCost":""}
+Case 14BDAE73A11 14D22940C35  {"caseID":"14D22940C35","partnerID":"12","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14DD8C581BF  {"caseID":"14DD8C581BF","partnerID":"14","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14C4BA1AE1A  {"caseID":"14C4BA1AE1A","partnerID":"15","addTurnover":"0","extraCost":""}
+Case 14C4BA1AE1A 14C93D6C464  {"caseID":"14C93D6C464","partnerID":"15","addTurnover":"0","extraCost":""}
+Case 14C93D6C464 14CD6F04A4B  {"caseID":"14CD6F04A4B","partnerID":"15","addTurnover":"0","extraCost":""}
+Case 14CD6F04A4B 14CFEA60B2B  {"caseID":"14CFEA60B2B","partnerID":"15","addTurnover":"0","extraCost":""}
+Case 14CFEA60B2B 14E1A6F3859  {"caseID":"14E1A6F3859","partnerID":"15","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14BDAE14625  {"caseID":"14BDAE14625","partnerID":"21","addTurnover":"0","extraCost":""}
+Case 14BDAE14625 14D22990536  {"caseID":"14D22990536","partnerID":"21","addTurnover":"531.3","extraCost":""}
+Case 14D22990536 14DC4348429  {"caseID":"14DC4348429","partnerID":"21","addTurnover":"2261.7","extraCost":""}
+Case 14DC4348429 14DE1402920  {"caseID":"14DE1402920","partnerID":"21","addTurnover":"276.5","extraCost":""}
+Case 14DE1402920 14E68B75413  {"caseID":"14E68B75413","partnerID":"21","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14CDC01FE67  {"caseID":"14CDC01FE67","partnerID":"24","addTurnover":"936.31","extraCost":""}
+Case 14CDC01FE67 14CF97584C7  {"caseID":"14CF97584C7","partnerID":"24","addTurnover":"3076.44","extraCost":""}
+Case 14CF97584C7 14D6B7E0AB5  {"caseID":"14D6B7E0AB5","partnerID":"24","addTurnover":"1196.6","extraCost":""}
+Partnerbill
+Case  14DC24EC3D5  {"caseID":"14DC24EC3D5","partnerID":"26","addTurnover":"0","extraCost":""}
+Case 14DC24EC3D5 14E06C40333  {"caseID":"14E06C40333","partnerID":"26","addTurnover":"0","extraCost":""}
+Case 14E06C40333 14E24F2A19A  {"caseID":"14E24F2A19A","partnerID":"26","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14C50A6F7A5  {"caseID":"14C50A6F7A5","partnerID":"27","addTurnover":"0","extraCost":""}
+Case 14C50A6F7A5 14CC13D2D83  {"caseID":"14CC13D2D83","partnerID":"27","addTurnover":"0","extraCost":""}
+Case 14CC13D2D83 14CF9FFB57E  {"caseID":"14CF9FFB57E","partnerID":"27","addTurnover":"0","extraCost":""}
+Case 14CF9FFB57E 14DB800E4C5  {"caseID":"14DB800E4C5","partnerID":"27","addTurnover":"0","extraCost":""}
+Case 14DB800E4C5 14DE1D38A1C  {"caseID":"14DE1D38A1C","partnerID":"27","addTurnover":"0","extraCost":""}
+Case 14DE1D38A1C 14E719A84D2  {"caseID":"14E719A84D2","partnerID":"27","addTurnover":"0","extraCost":""}
+Case 14E719A84D2 14E8BB0C5EF  {"caseID":"14E8BB0C5EF","partnerID":"27","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14A761B5544  {"caseID":"14A761B5544","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14A761B5544 14B030A8E3F  {"caseID":"14B030A8E3F","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14B030A8E3F 14BD44B3B76  {"caseID":"14BD44B3B76","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14BD44B3B76 14BFE71CF3C  {"caseID":"14BFE71CF3C","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14BFE71CF3C 14C1216415E  {"caseID":"14C1216415E","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14C1216415E 14C219CE2B6  {"caseID":"14C219CE2B6","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14C219CE2B6 14C32034524  {"caseID":"14C32034524","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14C32034524 14C73C7D96A  {"caseID":"14C73C7D96A","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14C73C7D96A 14C74407AE1  {"caseID":"14C74407AE1","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14C74407AE1 14C7442CA43  {"caseID":"14C7442CA43","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14C7442CA43 14CA2A32485  {"caseID":"14CA2A32485","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14CA2A32485 14CA2B021AB  {"caseID":"14CA2B021AB","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14CA2B021AB 14CA2CF0FC1  {"caseID":"14CA2CF0FC1","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14CA2CF0FC1 14CE09D87BA  {"caseID":"14CE09D87BA","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14CE09D87BA 14D058C2186  {"caseID":"14D058C2186","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14D058C2186 14D1E1710E3  {"caseID":"14D1E1710E3","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14D1E1710E3 14D48417A27  {"caseID":"14D48417A27","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14D48417A27 14D574CD6B9  {"caseID":"14D574CD6B9","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14D574CD6B9 14D8A0E0602  {"caseID":"14D8A0E0602","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14D8A0E0602 14D8FE2F143  {"caseID":"14D8FE2F143","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14D8FE2F143 14DF5ED4AB3  {"caseID":"14DF5ED4AB3","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14DF5ED4AB3 14DF69769A5  {"caseID":"14DF69769A5","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14DF69769A5 14E00F58179  {"caseID":"14E00F58179","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E00F58179 14E0AFEA7E5  {"caseID":"14E0AFEA7E5","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E0AFEA7E5 14E3E345C38  {"caseID":"14E3E345C38","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E3E345C38 14E448FD6E5  {"caseID":"14E448FD6E5","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E448FD6E5 14E5317D64A  {"caseID":"14E5317D64A","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E5317D64A 14E6347A8C0  {"caseID":"14E6347A8C0","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E6347A8C0 14E68B303D0  {"caseID":"14E68B303D0","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E68B303D0 14E71D8D4B0  {"caseID":"14E71D8D4B0","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E71D8D4B0 14E86D8636C  {"caseID":"14E86D8636C","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14E86D8636C 14EAA531897  {"caseID":"14EAA531897","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14EAA531897 14EE41F9726  {"caseID":"14EE41F9726","partnerID":"29","addTurnover":"0","extraCost":""}
+Case 14EE41F9726 14F06D0642A  {"caseID":"14F06D0642A","partnerID":"29","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  142B2CF0937  {"caseID":"142B2CF0937","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 142B2CF0937 1437B596328  {"caseID":"1437B596328","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1437B596328 14390227CBF  {"caseID":"14390227CBF","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14390227CBF 1439F2B5EE9  {"caseID":"1439F2B5EE9","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1439F2B5EE9 144BA7D4EF0  {"caseID":"144BA7D4EF0","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 144BA7D4EF0 1471F2B7B45  {"caseID":"1471F2B7B45","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1471F2B7B45 1476C59F114  {"caseID":"1476C59F114","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1476C59F114 1479F9391D0  {"caseID":"1479F9391D0","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1479F9391D0 148175DC9FF  {"caseID":"148175DC9FF","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 148175DC9FF 1487877A839  {"caseID":"1487877A839","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1487877A839 148CB7CB272  {"caseID":"148CB7CB272","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 148CB7CB272 148CFB08C0B  {"caseID":"148CFB08C0B","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 148CFB08C0B 148EFEB3FE0  {"caseID":"148EFEB3FE0","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 148EFEB3FE0 1497607A89C  {"caseID":"1497607A89C","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1497607A89C 1498443890F  {"caseID":"1498443890F","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 1498443890F 14989A52D8A  {"caseID":"14989A52D8A","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14989A52D8A 149EBF7CF40  {"caseID":"149EBF7CF40","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 149EBF7CF40 149F0B8CC6B  {"caseID":"149F0B8CC6B","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 149F0B8CC6B 14A06136FAC  {"caseID":"14A06136FAC","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14A06136FAC 14A337B4258  {"caseID":"14A337B4258","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14A337B4258 14A3896CDBB  {"caseID":"14A3896CDBB","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14A3896CDBB 14ABE78BB73  {"caseID":"14ABE78BB73","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14ABE78BB73 14AC84EC9E2  {"caseID":"14AC84EC9E2","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14AC84EC9E2 14B10C42F96  {"caseID":"14B10C42F96","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14B10C42F96 14B53D34C87  {"caseID":"14B53D34C87","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14B53D34C87 14B5E771298  {"caseID":"14B5E771298","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14B5E771298 14BC516FE47  {"caseID":"14BC516FE47","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14BC516FE47 14BE9D79F7D  {"caseID":"14BE9D79F7D","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14BE9D79F7D 14BEE36327F  {"caseID":"14BEE36327F","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14BEE36327F 14C1277AB2A  {"caseID":"14C1277AB2A","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14C1277AB2A 14C46A5CB8D  {"caseID":"14C46A5CB8D","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14C46A5CB8D 14C4AC020A7  {"caseID":"14C4AC020A7","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14C4AC020A7 14CFA52A5DA  {"caseID":"14CFA52A5DA","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14CFA52A5DA 14D00117680  {"caseID":"14D00117680","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14D00117680 14D0492ADFE  {"caseID":"14D0492ADFE","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14D0492ADFE 14D663FE2FD  {"caseID":"14D663FE2FD","partnerID":"33","addTurnover":"0","extraCost":""}
+Case 14D663FE2FD 14E6D2B2A6B  {"caseID":"14E6D2B2A6B","partnerID":"33","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14BB682D1C5  {"caseID":"14BB682D1C5","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14BB682D1C5 14E25BAD2E0  {"caseID":"14E25BAD2E0","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E25BAD2E0 14E2E9D97E7  {"caseID":"14E2E9D97E7","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E2E9D97E7 14E6D2B089D  {"caseID":"14E6D2B089D","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E6D2B089D 14E71F11C92  {"caseID":"14E71F11C92","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E71F11C92 14E7221B358  {"caseID":"14E7221B358","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E7221B358 14E867A3440  {"caseID":"14E867A3440","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E867A3440 14E8CDEA318  {"caseID":"14E8CDEA318","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E8CDEA318 14E8CE67664  {"caseID":"14E8CE67664","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E8CE67664 14E8DBC9F61  {"caseID":"14E8DBC9F61","partnerID":"4","addTurnover":"10000","extraCost":"122344"}
+Case 14E8DBC9F61 14E8DCEFF13  {"caseID":"14E8DCEFF13","partnerID":"4","addTurnover":"0","extraCost":"125"}
+Case 14E8DCEFF13 14E957E2394  {"caseID":"14E957E2394","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E957E2394 14E95BC8D68  {"caseID":"14E95BC8D68","partnerID":"4","addTurnover":"10000","extraCost":"18"}
+Case 14E95BC8D68 14E96486274  {"caseID":"14E96486274","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E96486274 14E973F4722  {"caseID":"14E973F4722","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14E973F4722 14EABB45DE5  {"caseID":"14EABB45DE5","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EABB45DE5 14EB0DD204C  {"caseID":"14EB0DD204C","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EB0DD204C 14EBF4283F5  {"caseID":"14EBF4283F5","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EBF4283F5 14EDE691948  {"caseID":"14EDE691948","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EDE691948 14EDEAC1034  {"caseID":"14EDEAC1034","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EDEAC1034 14EDEAD2712  {"caseID":"14EDEAD2712","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EDEAD2712 14EDEAE5139  {"caseID":"14EDEAE5139","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14EDEAE5139 14EDED2C776  {"caseID":"14EDED2C776","partnerID":"4","addTurnover":"0","extraCost":"25"}
+Case 14EDED2C776 14EF33276CA  {"caseID":"14EF33276CA","partnerID":"4","addTurnover":"1000","extraCost":"50"}
+Case 14EF33276CA 14EF3EFE9C0  {"caseID":"14EF3EFE9C0","partnerID":"4","addTurnover":"0","extraCost":"25"}
+Case 14EF3EFE9C0 14F02E623F9  {"caseID":"14F02E623F9","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14F02E623F9 14F031EA46C  {"caseID":"14F031EA46C","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14F031EA46C 14F037DDB0C  {"caseID":"14F037DDB0C","partnerID":"4","addTurnover":"0","extraCost":""}
+Case 14F037DDB0C 14F177D61C1  {"caseID":"14F177D61C1","partnerID":"4","addTurnover":"0","extraCost":"50","mediatorType":"1","mediatorID":"4","totalNet":2083}
+Case 14F177D61C1 14F17FE52A6  {"caseID":"14F17FE52A6","partnerID":"4","addTurnover":"1000","extraCost":"55","mediatorType":"1","mediatorID":"7","totalNet":275}
+Case 14F17FE52A6 14F1B73D67C  {"caseID":"14F1B73D67C","partnerID":"4","addTurnover":"1000","extraCost":"25","mediatorType":"1","mediatorID":"62","totalNet":603}
+Case 14F1B73D67C 14F1BCEAA9E  {"caseID":"14F1BCEAA9E","partnerID":"4","addTurnover":"1500","extraCost":"8","mediatorType":"1","mediatorID":"54","totalNet":603}
+Partnerbill
+Case  14D7A9F092B  {"caseID":"14D7A9F092B","partnerID":"45","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14D285B0EB3  {"caseID":"14D285B0EB3","partnerID":"5","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14B926C5026  {"caseID":"14B926C5026","partnerID":"64","addTurnover":"0","extraCost":""}
+Case 14B926C5026 14BFE12E44C  {"caseID":"14BFE12E44C","partnerID":"64","addTurnover":"0","extraCost":""}
+Case 14BFE12E44C 14E63E1A0C7  {"caseID":"14E63E1A0C7","partnerID":"64","addTurnover":"0","extraCost":""}
+Case 14E63E1A0C7 14E8C91DDBA  {"caseID":"14E8C91DDBA","partnerID":"64","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14C11E4D93A  {"caseID":"14C11E4D93A","partnerID":"71","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14BE544726F  {"caseID":"14BE544726F","partnerID":"76","addTurnover":"0","extraCost":""}
+Case 14BE544726F 14CDF85E044  {"caseID":"14CDF85E044","partnerID":"76","addTurnover":"0","extraCost":""}
+Case 14CDF85E044 14D98E68E5B  {"caseID":"14D98E68E5B","partnerID":"76","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14B53E9C10B  {"caseID":"14B53E9C10B","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14B53E9C10B 14B5942122B  {"caseID":"14B5942122B","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14B5942122B 14B5958F30F  {"caseID":"14B5958F30F","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14B5958F30F 14B59EB003B  {"caseID":"14B59EB003B","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14B59EB003B 14B5A2D59C2  {"caseID":"14B5A2D59C2","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14B5A2D59C2 14C02C55C0C  {"caseID":"14C02C55C0C","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14C02C55C0C 14C54FB26C4  {"caseID":"14C54FB26C4","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14C54FB26C4 14CB14C3BBE  {"caseID":"14CB14C3BBE","partnerID":"78","addTurnover":"0","extraCost":""}
+Case 14CB14C3BBE 14E2512EF2D  {"caseID":"14E2512EF2D","partnerID":"78","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14C94370132  {"caseID":"14C94370132","partnerID":"81","addTurnover":"0","extraCost":""}
+Case 14C94370132 14CEA045FEE  {"caseID":"14CEA045FEE","partnerID":"81","addTurnover":"0","extraCost":""}
+Case 14CEA045FEE 14CEA8B74D7  {"caseID":"14CEA8B74D7","partnerID":"81","addTurnover":"0","extraCost":""}
+Case 14CEA8B74D7 14D05182493  {"caseID":"14D05182493","partnerID":"81","addTurnover":"0","extraCost":""}
+Case 14D05182493 14D236BDEE8  {"caseID":"14D236BDEE8","partnerID":"81","addTurnover":"0","extraCost":""}
+Case 14D236BDEE8 14D8FFAF34F  {"caseID":"14D8FFAF34F","partnerID":"81","addTurnover":"0","extraCost":""}
+Case 14D8FFAF34F 14DD79D00B7  {"caseID":"14DD79D00B7","partnerID":"81","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14AAB9A563A  {"caseID":"14AAB9A563A","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14AAB9A563A 14ACE37475C  {"caseID":"14ACE37475C","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14ACE37475C 14ADE5ED942  {"caseID":"14ADE5ED942","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14ADE5ED942 14B271ACC1D  {"caseID":"14B271ACC1D","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14B271ACC1D 14B963CD445  {"caseID":"14B963CD445","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14B963CD445 14C751CE9C1  {"caseID":"14C751CE9C1","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14C751CE9C1 14D7B90E067  {"caseID":"14D7B90E067","partnerID":"83","addTurnover":"0","extraCost":""}
+Case 14D7B90E067 14DB991857C  {"caseID":"14DB991857C","partnerID":"83","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14BA2876483  {"caseID":"14BA2876483","partnerID":"89","addTurnover":"0","extraCost":""}
+Partnerbill
+Case  14CE070128E  {"caseID":"14CE070128E","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14CE070128E 14DBA625B3D  {"caseID":"14DBA625B3D","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14DBA625B3D 14DD6F1B6F8  {"caseID":"14DD6F1B6F8","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14DD6F1B6F8 14DE6646F83  {"caseID":"14DE6646F83","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14DE6646F83 14E1A86D984  {"caseID":"14E1A86D984","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14E1A86D984 14E430A462A  {"caseID":"14E430A462A","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14E430A462A 14E6780D472  {"caseID":"14E6780D472","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14E6780D472 14E69362D79  {"caseID":"14E69362D79","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14E69362D79 14E6C9777A2  {"caseID":"14E6C9777A2","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14E6C9777A2 14EB4F5F67D  {"caseID":"14EB4F5F67D","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14EB4F5F67D 14ED957C592  {"caseID":"14ED957C592","partnerID":"98","addTurnover":"0","extraCost":""}
+Case 14ED957C592 14F2638CAC6  {"caseID":"14F2638CAC6","partnerID":"98","addTurnover":"0","extraCost":""}
+Partnerbill
+Crediting Case {"caseID":"14F177D61C1","partnerID":"4","addTurnover":"0","extraCost":"50","mediatorType":"1","mediatorID":"4","totalNet":2083}
+Crediting Case {"caseID":"14F1BCEAA9E","partnerID":"4","addTurnover":"1500","extraCost":"8","mediatorType":"1","mediatorID":"54","totalNet":603}
+Start createCrediting cerdirorID: 4  [{"caseID":"14F177D61C1","partnerID":"4","addTurnover":"0","extraCost":"50","mediatorType":"1","mediatorID":"4","totalNet":2083}]
+Start createCrediting mediatortor: 'ERGO Hauptagentur Nils Lohmann'
+Caseprovisoon 20
+End Case
+
+
+Crediting Case {"caseID":"14F1B73D67C","partnerID":"4","addTurnover":"1000","extraCost":"25","mediatorType":"1","mediatorID":"62","totalNet":603}
+Start createCrediting cerdirorID: 54  [{"caseID":"14F1BCEAA9E","partnerID":"4","addTurnover":"1500","extraCost":"8","mediatorType":"1","mediatorID":"54","totalNet":603}]
+Start createCrediting mediatortor: 'Moritz v. Eckardstein Versicherungsmakler UG (haftungsbeschr‰nkt)'
+Caseprovisoon 35
+End Case
+
+
+Crediting Case {"caseID":"14F17FE52A6","partnerID":"4","addTurnover":"1000","extraCost":"55","mediatorType":"1","mediatorID":"7","totalNet":275}
+Start createCrediting cerdirorID: 62  [{"caseID":"14F1B73D67C","partnerID":"4","addTurnover":"1000","extraCost":"25","mediatorType":"1","mediatorID":"62","totalNet":603}]
+No valid partner/mediator for type  > SELECT name as brand,owner as name,street,zip, town  FROM   `mediator`  WHERE  id=62 AND provision=1   
+Start createCrediting cerdirorID: 7  [{"caseID":"14F17FE52A6","partnerID":"4","addTurnover":"1000","extraCost":"55","mediatorType":"1","mediatorID":"7","totalNet":275}]
+Start createCrediting mediatortor: 'Mario Wendel'
+Caseprovisoon 35
+End Case
+
+
+24 Rechnungen und 3 Gutschriften erstellt f√ºr 20153

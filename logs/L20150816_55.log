@@ -1,0 +1,5 @@
+SQL SELECT case.id as caseID, case.partnerID as partnerID,case.mediatorType as mediatorType, case.mediatorID as mediatorID, 
+			caseBill.totalNet as billNet, caseBill.id as billID, caseBill.type as billType			FROM   `case` INNER JOIN `caseBill` ON  caseBill.caseID LIKE case.id  AND caseBill.totalNet>0 AND caseBill.ignore=0 AND caseBill.status>=9 
+				WHERE case.mediatorID>0  AND case.status = 11 AND case.ignore = 0   AND   (case.changedate LIKE "201507%" OR case.changedate LIKE "201508%" OR case.changedate LIKE "201509%") ORDER BY caseID
+Amount of bill records15
+[{"caseID":"14F177D61C1","partnerID":"4","mediatorType":"1","mediatorID":"4","billNet":"328","billID":"20413","billType":"Rechnung","totalNet":0},{"caseID":"14F17FE52A6","partnerID":"4","mediatorType":"1","mediatorID":"7","billNet":"328","billID":"20422","billType":"Rechnung","totalNet":0},{"caseID":"14F1B73D67C","partnerID":"4","mediatorType":"1","mediatorID":"62","billNet":"328","billID":"20429","billType":"Rechnung","totalNet":0},{"caseID":"14F1BCEAA9E","partnerID":"4","mediatorType":"1","mediatorID":"54","billNet":"328","billID":"20435","billType":"Rechnung","totalNet":0}]
